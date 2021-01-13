@@ -21,6 +21,10 @@ body {
   text-indent: 34px;
 }
 
+.navbar ul li a {
+  padding: 5px 10px;
+}
+
 .navbar {
   background: #F4F4F4;
   display: flex;
@@ -144,13 +148,22 @@ body {
 }
 
 .image {
-  display: flex;
-  flex: 1;
   margin-left: auto;
   margin-right: auto;
   align-items: center;
   justify-content: center;
-  max-width: 80%;
+}
+
+.max-alto {
+  height: 100%;
+}
+
+.max-ancho {
+  width: 100%;
+}
+
+.ocultar-exceso {
+  overflow: hidden;
 }
 
 .imagePrototypeWomeninTech {
@@ -159,7 +172,7 @@ body {
 
 .projectName {
   font-size: 40px;
-  font-weight: normal;
+  font-weight: 500;
   margin-bottom: 0px;
 }
 
@@ -188,8 +201,8 @@ body {
   text-decoration: none;
 }
 
-#netflix .button {
-  background: #E50914;
+#hiddenGems .button {
+  background: #E8613C;
 }
 #womenInTech .button {
   background: #F1A03D;
@@ -219,8 +232,8 @@ body {
   justify-content: center;
 }
 
-#netflix.containerWork {
-  background: black;
+#hiddenGems.containerWork {
+  background: #1D1D1D;
 }
 
 #womenInTech.containerWork {
@@ -235,10 +248,6 @@ body {
   justify-content: flex-end;
   color: white;
   margin-bottom: 0px;
-}
-
-#netflix .projectTitle {
-  color: #E50914;
 }
 
 .projectDescription {
@@ -256,25 +265,22 @@ body {
 }
 
 a.selected,
+a.selected-hiddenGems,
 a.selected-respira,
-a.seleected-netflix,
 a.selected-womenInTech{
   font-weight: normal;
   color: white;
   background: black;
   border-radius: 30px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  transition: background-color .3s;
+}
+
+a.selected-hiddenGems {
+  background: #E8613C;
 }
 
 a.selected-respira {
   background: #349EFF;
-}
-
-a.selected-netflix {
-  background: #E50914;
 }
 
 a.selected-womenInTech {
@@ -286,8 +292,8 @@ a.selected-womenInTech {
   color: #349EFF;
 }
 
-#netflix .buttonSeePrototype {
-  color: #E50914;
+#hiddenGems .buttonSeePrototype {
+  color: #E8613C;
 }
 
 #womenInTech .buttonSeePrototype {
@@ -295,52 +301,54 @@ a.selected-womenInTech {
 }
 
 .subtitles {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
   color: #349EFF;
   background: white;
   font-size: 30px;
-  margin-top: 50px;
+  padding-top: 50px;
   margin-bottom: 50px;
+  margin-top: 0;
+}
+
+.subtitlesHiddenGems {
+  color: #E8613C;
+  background: white;
+  font-size: 30px;
+  padding-top: 50px;
+  margin-bottom: 50px;
+  margin-top: 0;
+}
+
+.subtitlesWomenInTech {
+  color: #f1a03d;
+  background: white;
+  font-size: 30px;
+  padding-top: 50px;
+  margin-bottom: 50px;
+  margin-top: 0;
 }
 
 .percentages {
   color: #1ED8DB;
-  font-size: 150px;
-  margin-top: 100px;
-  margin-left: 200px;
-  margin-bottom: 0px;
-}
-
-.percentages1 {
-  color: #1ED8DB;
-  font-size: 150px;
-  margin: 0px;
-  margin-left: 200px;
+  font-size: 100px;
+  margin-top: 50px;
   margin-bottom: 0px;
 }
 
 #womenInTechPercentages.percentages {
   margin: 0px;
   text-align: end;
-  margin-right: 200px;
 }
 
 .textPercentages {
   margin: 0px;
-  margin-left: 200px;
-  color: black;
-  font-size: 30px;
 }
 
 #womenInTechTextPercentages.textPercentages {
   text-align: end;
-  margin-right: 200px;
 }
 
-#netflixSubtitles .subtitles {
-  color: #E50914;
+#hiddenGemsSubtitles .subtitles {
+  color: #E8613C;
 }
 
 #womenInTechSubtitles .subtitles {
@@ -348,7 +356,6 @@ a.selected-womenInTech {
 }
 
 .information {
-  text-align: center;
   margin-left: auto;
   margin-right: auto;
   color: #349EFF;
@@ -358,7 +365,6 @@ a.selected-womenInTech {
 }
 
 .paragraphs {
-  text-align: center;
   margin-left: auto;
   margin-right: auto;
   color: black;
@@ -375,8 +381,6 @@ a.selected-womenInTech {
 }
 
 .list {
-  text-align: center;
-  justify-content: center;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -385,8 +389,6 @@ a.selected-womenInTech {
 .figure {
   margin-left: auto;
   margin-right: auto;
-  display: flex;
-  flex-direction: column;
   margin-top: 50px;
   margin-bottom: 50px;
 }
@@ -394,7 +396,7 @@ a.selected-womenInTech {
 .figure1 {
   margin-left: auto;
   display: flex;
-  margin-right: 25px;
+  margin-right: auto;
 }
 
 .figure2 {
@@ -414,7 +416,6 @@ a.selected-womenInTech {
   margin-right: auto;
   display: flex;
   flex-direction: column;
-  background: #ECF6FF;
   align-items: center;
   justify-content: center;
   padding-top: 100px;
@@ -422,11 +423,38 @@ a.selected-womenInTech {
   position: relative;
 }
 
+.projectsBoxWomenInTech {
+  position: relative;
+}
+
+#respiraWireframes.projectsBox{
+  background: #ecf6ff;
+}
+
+.projectsBoxHiddenGems {
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
+}
+
+#hiddenGemsWireframes.projectsBoxHiddenGems{
+  background: #F9CEC3;
+}
+
 #projectsBoxWomenInTech.projectsBox {
   background: #FFE6C7;
 }
 
-#projectsBoxNetflix.projectsBox {
+#projectsBoxHiddenGems.projectsBox {
   background: #FFEEEF;
 }
 
@@ -516,10 +544,7 @@ a.selected-womenInTech {
 
 .myprofileBox {
   background: white;
-  height: 100vh;
-  width: 100vw;
   display: flex;
-  margin-top: 100px;
   flex-direction: row;
 }
 
@@ -529,25 +554,20 @@ a.selected-womenInTech {
 }
 
 .personalInfo {
-  min-width: 75vw;
   flex: 1;
-  flex-shrink: 0;
   align-items: center;
 }
 
 .links {
-  width: 150px;
+  width: 100px;
   height: 100px;
   display: flex;
   flex: 1;
   justify-content: space-between;
-
-
-
 }
 
 .personalInfoBox {
-  margin: 50px;
+  margin: 120px;
 }
 
 .fa-linkedin-square {
@@ -563,7 +583,7 @@ a.selected-womenInTech {
   height: 840px;
 }
 
-#netflix .projectImageBox {
+#hiddenGems .projectImageBox {
   background-color: #000000;
 }
 
@@ -582,12 +602,12 @@ a.selected-womenInTech {
   font-size: 60px;
 }
 
-#arrowAnimationButtonRespira .gotopbtn {
-  color: #349EFF;
+#arrowAnimationButtonHiddenGems .gotopbtn {
+  color: #E8613C;
 }
 
-#arrowAnimationButtonNetflix .gotopbtn {
-  color: #E50914;
+#arrowAnimationButtonRespira .gotopbtn {
+  color: #349EFF;
 }
 
 #arrowAnimationButtonWomenInTech .gotopbtn {
@@ -616,15 +636,42 @@ a.selected-womenInTech {
   }
 }
 
-img {
-  max-width: 100%;
+#navigation ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all .25s;
+  border-left: 4px solid transparent;
+  border-radius: 2px;
+  padding-left: 7px;
+}
+
+#navigation ul li.active {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+#respira #navigation ul li.active {
+  border-left-color: #349EFF;
+}
+
+#hiddenGems #navigation ul li.active {
+  border-left-color: #E8613C;
+}
+
+#navigation.womenInTech ul li.active {
+  border-left-color: #F1A03D;
+}
+
+.seccion-proyecto {
+  scroll-margin-top: 50px;
 }
 
 @media only screen and (max-width: 768px) {
   #work #respira {
     flex-direction: column-reverse;
   }
-  #work #netflix {
+  #work #hiddenGems {
     flex-direction: column;
   }
   #work #womenInTech {
@@ -661,7 +708,7 @@ img {
   #work #respira {
     flex-direction: column-reverse;
   }
-  #work #netflix {
+  #work #hiddenGems {
     flex-direction: column;
   }
   .projectBox {
@@ -673,3 +720,108 @@ img {
     height: 50vh;
   }
 }
+
+/* #### Mobile Phones Portrait #### */
+@media screen and (max-device-width: 480px) and (orientation: portrait){
+  /* some CSS here */
+}
+
+/* #### Mobile Phones Landscape #### */
+@media screen and (max-device-width: 640px) and (orientation: landscape){
+  /* some CSS here */
+}
+
+/* #### Mobile Phones Portrait or Landscape #### */
+@media screen and (max-device-width: 640px){
+  /* some CSS here */
+}
+
+/* #### iPhone 4+ Portrait or Landscape #### */
+@media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2){
+  /* some CSS here */
+}
+
+/* #### iPhone 5 Portrait or Landscape #### */
+@media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2){
+  /* some CSS here */
+}
+
+/* #### iPhone 6 and 6 plus Portrait or Landscape #### */
+@media (min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3){
+  /* some CSS here */
+}
+
+/* #### Tablets Portrait or Landscape #### */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px){
+  /* some CSS here */
+}
+
+/* #### Desktops #### */
+@media screen and (min-width: 1024px){
+  .device-size {
+    max-width: 800px;
+    margin: auto;
+  }
+}
+
+
+
+a {
+  text-decoration: none;
+  color: #3F3F3F;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+#navigation {
+  padding: 50px;
+  padding-top: 50px;
+  padding-right: 250px;
+  transform: unset;
+  height: 200px;
+  position: sticky;
+  top: 80px;
+  background: none;
+  font-size: 16px;
+  font-family: Poppins;
+  width: 0;
+  box-sizing: border-box;
+}
+
+.linksnavigation{
+  width: 280px;
+  height: 50px;
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.colorBoxStyle{
+  width: 1800px;
+  height: 400px;
+  font-family: Graphik;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  color: white
+}
+
+.textBoxStyle{
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-left: -20px;
+  margin-bottom: -20px;
+  font-family: CaslonGraphiqueEF;
+}
+
+#graphikTypography.textBoxStyle {
+  font-family: Graphik;
+}
+

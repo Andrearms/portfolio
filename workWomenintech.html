@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="css/style.css">
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script type="text/javascript" src="code.js"></script>
 </head>
 <body>
   <div class="allpage">
@@ -19,55 +21,136 @@
         </div>
         <div>
           <ul>
-            <li><a class="selected selected-womenInTech" href="index.html#work">Work</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a class="selected selected-womenInTech" href="index.html#work">Trabajo · Women in tech</a></li>
+            <li><a href="about.html">Sobre mí</a></li>
           </ul>
         </div>
       </nav>
     </div>
     <section class="containerWork" id="womenInTech">
       <h1 class="projectTitle">Women in tech</h1>
-      <h2 class="projectDescription paddedOnPhone">Website to inform about the situation of women in technology.</h2>
-      <a class="buttonSeePrototype" href="https://www.figma.com/proto/sSFcp557aAnJzJ9ieiL1H9/Netflix-proyecto-5?node-id=16%3A1&viewport=281%2C365%2C0.044461656361818314&scaling=scale-down">
-        See prototype
+      <h2 class="projectDescription paddedOnPhone">Sitio web para informar sobre la situación de la mujer en la tecnología.</h2>
+      <a class="buttonSeePrototype" href="https://www.figma.com/proto/PxzYrhAmYx890dyqRRwhVT/Women-in-tech?node-id=284%3A17415&viewport=2213%2C348%2C0.3490317165851593&scaling=scale-down">
+        Ver prototipo
       </a>
     </section>
-    <div id="womenInTechSubtitles">
-      <section>
-        <p class="paragraphs1 paddedOnPhone">We have done this project between Adriana Olivares and myself. <br> It is a web page to inform about the situation of women in technology and to give <br> a vision about the injustices that still exist both in our country and in other countries.</p>
-      </section>
-      <section>
-        <h1 class="percentages">26%</h1>
-        <p class="textPercentages paddedOnPhone">Of all computing jobs <br> in the world are held <br> my women.</p>
-      </section>
-      <section>
-        <h1 class="percentages" id="womenInTechPercentages">46%</h1>
-        <p class="textPercentages paddedOnPhone" id="womenInTechTextPercentages">Of women have <br> reported discrimination <br> in the
-          tech sector.</p>
-      </section>
-      <section>
-        <h1 class="percentages1">93%</h1>
-        <p class="textPercentages paddedOnPhone">Of the capital invested <br> in the tech companies <br> went to all-made <br> founding teams.</p>
-      </section>
-      <section>
-        <h1 class="subtitles">Web and mobile prototype</h1>
-        <p class="paragraphs">Some screens of the prototype are shown below. Click on the link to try the prototype.</p><br><br>
-        <div class="projectsBox" id="projectsBoxWomenInTech">
-          <div style="position: absolute">
-            <a href="https://www.figma.com/proto/PxzYrhAmYx890dyqRRwhVT/Women-in-tech?node-id=151%3A783&viewport=-2910%2C-185%2C0.1817225217819214&scaling=min-zoom">
-              <img class="image" src="./img/MacBook%20Pro.png">
-            </a>
-          </div>
-          <div style="position: absolute; margin-left: 1000px; margin-top: 200px">
-            <a href="https://www.figma.com/proto/PxzYrhAmYx890dyqRRwhVT/Women-in-tech?node-id=284%3A17415&viewport=2213%2C348%2C0.3490317165851593&scaling=scale-down">
-              <img src="./img/iPhone%2012%20Pro@2x.png" style="width:315px;height:600px">
-            </a>
-          </div>
+    <div>
+      <div style="flex-direction: row; display: flex">
+        <div id="navigation" class="womenInTech">
+          <ul>
+            <li href="#explanation" class="linksnavigation"><a href="#explanation">Explicación</a></li>
+            <li href="#research" class="linksnavigation"><a href="#research">Investigación</a></li>
+            <li href="#moodboard" class="linksnavigation"><a href="#moodboard">Colores y tipografías</a></li>
+            <li href="#prototype" class="linksnavigation"><a href="#prototype">Prototipo</a></li>
+          </ul>
         </div>
-      </section>
-    </div>
-    <div class="bounce" id="arrowAnimationButtonWomenInTech">
-      <a class="gotopbtn" href="#"><i class="far fa-arrow-alt-circle-up"></i></a>
+        <section style="flex: 1">
+          <section id="explanation" class="device-size seccion-proyecto">
+            <h1 class="subtitlesWomenInTech">Explicación</h1>
+            <p class="paragraphs">La mayoría de puestos de alta dirección en empresas de la esfera de la innovación como Google, Facebook, Microsoft, HP o LinkedIn lo desempeñan mujeres, un escenario que muestra la revolución femenina en su pleno apogeo y que demuestra que se han dado pasos importantes para lograr una diversidad de género, aunque todavía queda mucho camino por recorrer.</p>
+            <p class="paragraphs">Por esta razón, Adriana Olivares y yo quisimos hacer una página web para informar sobre la situación de las mujeres en la tecnología y dar una visión sobre las injusticias que por desgracia, aún existen tanto en nuestro país como en otros países del mundo.</p>
+            <p class="paragraphs">A continuación tenemos algunos datos que hemos añadido en la página web. Al final podéis ver el prototipo final tanto para web como para móvil. En el prototipo podréis obtener más información, como por ejemplo, la diferencia de salario entre mujeres y hombres en distintos países.</p>
+          </section>
+          <section id="research" class="device-size seccion-proyecto">
+            <h1 class="subtitlesWomenInTech">Investigación</h1>
+            <div id="womenInTechSubtitles">
+              <section>
+                <h1 class="percentages">26%</h1>
+                <p class="textPercentages paddedOnPhone">De trabajos de informática<br>en el mundo están ocupados<br>por mujeres.</p>
+              </section>
+              <section>
+                <h1 class="percentages" id="womenInTechPercentages">46%</h1>
+                <p class="textPercentages paddedOnPhone" id="womenInTechTextPercentages">De las mujeres ha denunciado<br>discriminación en el sector<br>tecnológico.</p>
+              </section>
+              <section>
+                <h1 class="percentages">93%</h1>
+                <p class="textPercentages paddedOnPhone">Del capital invertido en las<br>empresas de tecnología se<br>destinó a equipos fundadores<br>compuestos exclusivamente<br>por hombres.
+                </p>
+              </section>
+              <section>
+                <h1 class="percentages" id="womenInTechPercentages">30%</h1>
+                <p class="textPercentages paddedOnPhone" id="womenInTechTextPercentages">De las mujeres mayores<br>de 35 años todavía están<br>en puestos junior.</p>
+              </section>
+              <section>
+                <h1 class="percentages" style="margin-top: 0px">5%</h1>
+                <p class="textPercentages paddedOnPhone">De los hombres que<br>tienen 35 años o más<br>todavía están en<br>puestos junior.</p>
+              </section>
+              <section>
+                <h1 class="percentages" id="womenInTechPercentages">50%</h1>
+                <p class="textPercentages paddedOnPhone" id="womenInTechTextPercentages">De las mujeres entre 25 y 34<br>años son desarrolladores<br>senior.</p>
+              </section>
+              <section>
+                <h1 class="percentages" style="margin-top: 0px">85%</h1>
+                <p class="textPercentages paddedOnPhone">De los hombres de entre 25<br>y 34 años son desarrolladores<br>senior.</p>
+              </section>
+            </div>
+          </section>
+          <section id="moodboard" class="device-size seccion-proyecto">
+            <h1 class="subtitlesWomenInTech">Colores y tipografias</h1>
+            <p class="paragraphs">Los colores, hemos utilizado el naranja, azul, blanco y negro.</p>
+            <p class="paragraphs">La tipografía que hemos utilizado para títulos es la Morganite y para el resto, la tipografía Neue Plak.</p>
+          </section>
+
+          <section class="device-size" style="display: flex; flex-direction: column">
+            <div style="display:flex; flex-direction: row; flex: 1">
+              <div class="colorBoxStyle" style="background: #F1A03D;">
+                <div style=""> Color principal</div>
+                <div>#F1A03D</div>
+              </div>
+              <div class="colorBoxStyle" style="background: #1ED8DB">
+                <div style=""> Color principal</div>
+                <div>#1ED8DB</div>
+              </div>
+            </div>
+            <div style="display:flex; flex-direction: row; flex: 1;">
+              <div class="colorBoxStyle" style="background: #181818">
+                <div style=""> Color principal</div>
+                <div>#181818</div>
+              </div>
+              <div class="colorBoxStyle" style="background: #FAFAFA; color: black">
+                <div style=""> Color principal</div>
+                <div>#FAFAFA</div>
+              </div>
+            </div>
+          </section>
+          <section class="device-size" style="display: flex; flex-direction: column; margin-top: 50px">
+            <div style="display:flex; flex-direction: row; flex: 1">
+              <div class="colorBoxStyle" style="background: #F1A03D;">
+                <div class="textBoxStyle" style="font-size: 150px; font-family: 'Morganite'; font-weight: bold">Aa</div>
+              </div>
+              <div class="colorBoxStyle" style="background: #1D1D1D">
+                <div class="textBoxStyle" style="font-family: 'Morganite'; font-size: 40px">ABCDEFGHIJKLMNÑOPQRSTUVWXYZ<br>abcdefghijklmnñopqrstuvwxyz<br>0123456789 (@:€&#!</div>
+              </div>
+            </div>
+            <div style="display:flex; flex-direction: row; flex: 1;">
+              <div class="colorBoxStyle" style="background: #f1a03d">
+                <div class="textBoxStyle" style="font-size: 150px; font-family: 'Neue Plak'; font-weight: bold"> Aa</div>
+              </div>
+              <div class="colorBoxStyle" style="background: #1D1D1D">
+                <div id="graphikTypography" class="textBoxStyle" style="font-family: 'Neue Plak'; padding-top: 30px">ABCDEFGHIJKLMNÑOPQRSTUVWXYZ<br>abcdefghijklmnñopqrstuvwxyz<br>0123456789 (@:€&#!</div>
+                <div id="graphikTypography" class="textBoxStyle" style="font-weight: bold; margin-top: -190px; font-family: 'Neue Plak'">ABCDEFGHIJKLMNÑOPQRSTUVWXYZ<br>abcdefghijklmnñopqrstuvwxyz<br>0123456789 (@:€&#!</div>
+              </div>
+            </div>
+          </section>
+          <section id="prototype" class="projectsBoxWomenInTech device-size seccion-proyecto">
+            <h1 class="subtitlesWomenInTech">Prototipo</h1>
+            <div>
+              <div style="position:relative;">
+                <a href="https://www.figma.com/proto/PxzYrhAmYx890dyqRRwhVT/Women-in-tech?node-id=151%3A783&viewport=-2910%2C-185%2C0.1817225217819214&scaling=min-zoom">
+                  <img style="width: 800px" class="image" src="./img/MacBook%20Pro.png">
+                  <img src="./img/iPhone%2012%20Pro@2x.png" style="width:150px; height:300px; position: absolute; bottom: 38px; right: 15px;">
+                </a>
+              </div>
+              <div>
+                <a href="https://www.figma.com/proto/PxzYrhAmYx890dyqRRwhVT/Women-in-tech?node-id=284%3A17415&viewport=2213%2C348%2C0.3490317165851593&scaling=scale-down"></a>
+              </div>
+            </div>
+          </section>
+        </section>
+      </div>
+      <div class="bounce" id="arrowAnimationButtonHiddenGems">
+        <a class="gotopbtn" href="#"><i class="far fa-arrow-alt-circle-up"></i></a>
+      </div>
     </div>
   </div>
 </body>

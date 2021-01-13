@@ -1,135 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Andrea Ramos Juan · Respira</title>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <meta charset="UTF-8">
+  <title>Andrea Ramos Juan · Respira</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script type="text/javascript" src="code.js"></script>
 </head>
-<body>
-    <div class="allpage">
-      <div class="sticky">
-        <nav class="navbar">
-          <div>
-            <p>
-              <a href="index.html">ARJ</a>
-            </p>
-          </div>
-          <div>
-            <ul>
-              <li><a class="selected selected-respira" href="index.html#work">Work</a></li>
-              <li><a href="about.html">About</a></li>
-            </ul>
-          </div>
-        </nav>
+<body id="respira">
+<div class="allpage">
+  <div class="sticky">
+    <nav class="navbar">
+      <div>
+        <p>
+          <a href="index.html">ARJ</a>
+        </p>
       </div>
-        <section class="containerWork" id="respira">
-          <h1 class="projectTitle">Respira</h1>
-          <h2 class="projectDescription paddedOnPhone">Mobile application to help people <br>
-            suffering from anxiety and panic attacks.</h2>
-          <a class="buttonSeePrototype" href="https://www.figma.com/proto/X5SZIVsr6Bfo3NRVTD9OPp/Proyecto-6-Wellness?node-id=452%3A72&viewport=832%2C309%2C0.089595727622509&scaling=scale-down">
-            See prototype
-          </a>
+      <div>
+        <ul>
+          <li><a class="selected selected-respira" href="index.html#work">Trabajo · Respira</a></li>
+          <li><a href="about.html">Sobre mí</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <section class="containerWork" id="respira">
+    <h1 class="projectTitle">Respira</h1>
+    <h2 class="projectDescription paddedOnPhone">Aplicación móvil para ayudar a aquellas personas
+      <br>que sufren ataques de ansiedad o ataques de pánico.</h2>
+    <a class="buttonSeePrototype"
+       href="https://www.figma.com/proto/X5SZIVsr6Bfo3NRVTD9OPp/Proyecto-6-Wellness?node-id=452%3A72&viewport=832%2C309%2C0.089595727622509&scaling=scale-down">
+      Ver prototipo
+    </a>
+  </section>
+  <div>
+    <div style="flex-direction: row; display: flex">
+      <div id="navigation">
+        <ul>
+          <li href="#explanation" class="linksnavigation"><a href="#explanation">Explicación</a></li>
+          <li href="#research" class="linksnavigation"><a href="#research">Investigación</a></li>
+          <li href="#affinitidiagram" class="linksnavigation"><a href="#affinitidiagram">Diagrama de afinidad</a></li>
+          <li href="#problemstatement" class="linksnavigation"><a href="#problemstatement">Problema</a></li>
+          <li href="#empathymap" class="linksnavigation"><a href="#empathymap">Mapa de empatía</a></li>
+          <li href="#competitiveanalysis" class="linksnavigation"><a href="#competitiveanalysis">Análisis competitivo</a></li>
+          <li href="#userflows" class="linksnavigation"><a href="#userflows">Flujos de usuarios</a></li>
+          <li href="#sitemap" class="linksnavigation"><a href="#sitemap">Mapa de sitio</a></li>
+          <li href="#solutions" class="linksnavigation"><a href="#solutions">Soluciones</a></li>
+          <li href="#userpersona" class="linksnavigation"><a href="#userpersona">User persona</a></li>
+          <li href="#wireframes" class="linksnavigation"><a href="#wireframes">Wireframes</a></li>
+          <li href="#moodboard" class="linksnavigation"><a href="#moodboard">Moodboard, colores y tipografías</a></li>
+          <li href="#prototype" class="linksnavigation"><a href="#prototype">Prototipo</a></li>
+        </ul>
+      </div>
+      <section style="flex: 1">
+        <section id="explanation" class="device-size  seccion-proyecto">
+          <h1 class="subtitles">Explicación</h1>
+          <p class="paragraphs">Respira es un proyecto para aquellas personas que sufren ataques de ansiedad o ataques
+            de pánico.<br><br>
+
+            En la aplicación tenemos una pantalla principal donde tendremos todas nuestras estadísticas y estados de
+            ánimo.<br><br>
+
+            Por otra parte, también podremos elegir entre dos opciones.
+            La primera opción consiste en hacer un ejercicio de respiración abdominal cuando estamos sufriendo un
+            ataque de ansiedad o de pánico con la opción de hacerlo solo o con amigos o desconocidos que en ese momento
+            estén disponibles o estén haciendo el ejercicio.
+            Y la otra opción, consiste en una opción de chat donde podemos hablar con otra gente que esté pasando por lo
+            mismo ya sea en un grupo de personas o un grupo de personas dirigido por un profesional.</p>
         </section>
-        <section>
-          <h1 class="subtitles">Research and problem</h1>
+        <section id="research" class="device-size seccion-proyecto">
+          <h1 class="subtitles">Investigación</h1>
           <h2 class="information">1/10</h2>
-          <p class="paragraphs">Adults have a mental health <br> problem</p>
-          <img class="figure" src="img/graficaAnsiedadDepresion.svg">
+          <p class="paragraphs" style="padding-bottom: 50px">Adultos tienen un problema de salud mental.</p>
+        </section>
+        <section class="device-size">
+          <img class="figure device-size" src="img/graficaAnsiedadDepresion.svg">
+        </section>
+        <section class="device-size" style="padding-top: 50px">
           <img class="figure1" src="./img/Hombres/Mujeres.svg">
         </section>
-        <section>
-          <h1 class="subtitles">User persona</h1>
-          <img class="figure" src="./img/User persona 1.svg">
+        <section id="affinitidiagram" class="device-size seccion-proyecto">
+          <h1 class="subtitles">Diagrama de afinidad</h1>
+          <p class="paragraphs">El diagrama de afinidad me ha servido para poder organizar todo los comentarios y datos
+            de las encuestas y entrevistas. Organicé toda la información en 8 grupos diferentes como podemos ver en la
+            siguiente imagen.</p>
         </section>
-        <section>
-          <h1 class="subtitles">Competitive Analysis</h1>
-          <p class="paragraphs paddedOnPhone">The apps that I found and analyzed were the following:</p>
+        <section class="device-size">
+          <img class="figure max-ancho" src="img/affinitidiagram.png">
+        </section>
+        <section id="problemstatement" class="device-size seccion-proyecto">
+          <h1 class="subtitles">Problema</h1>
+          <p class="paragraphs">Una vez tenemos toda la información agrupada, pude obtener los principales problemas que
+            tienen las personas cuando sufren un ataque de ansiedad o de pánico.</p>
+          <p class="paragraphs">1) Encontrar una técnica de respiración sencilla con música relajante en el momento que
+            estan sufiendo el ataque de ansiedad o de pánico, ya que en ese momento la persona queda "anulada".</p>
+          <p class="paragraphs">2) Encontrar un grupo de personas, ya sea organizado por un profesional o no para
+            sentirse comprendida.</p>
+        </section>
+        <section id="empathymap" class="device-size seccion-proyecto">
+          <h1 class="subtitles">Mapa de empatía</h1>
+          <p class="paragraphs">A continuación podemos ver el empathy map, que me ha ayudado a comprender mejor a los
+            usuarios que he entrevistado y visualizar sus necesidades.</p>
+        </section>
+        <section class="device-size">
+          <img class="figure max-ancho" src="img/emphacymap.png">
+        </section>
+        <section id="competitiveanalysis" class="device-size seccion-proyecto">
+          <h1 class="subtitles">Análisis competitivo</h1>
+          <p class="paragraphs paddedOnPhone">Las aplicaciones que encontré y analicé fueron las siguientes:</p>
           <ul class="list">
-            <li class="bullet-verde">Therapy chat</li>
-            <li class="bullet-verde">Wysa</li>
-            <li class="bullet-verde">Sanvello</li>
-            <li class="bullet-verde">Mind diagnostic</li>
-            <li class="bullet-verde">Meyo</li>
-            <li class="bullet-verde">Focusly</li>
+            <li class="bullet-verde">1) Therapy chat</li>
+            <li class="bullet-verde">2) Wysa</li>
+            <li class="bullet-verde">3) Sanvello</li>
+            <li class="bullet-verde">4) Mind diagnostic</li>
+            <li class="bullet-verde">5) Meyo</li>
+            <li class="bullet-verde">6) Focusly</li>
           </ul>
-          <p class="paragraphs paddedOnPhone">All these applications do not have the chat option, many exercises are paid <br> and the breathing option does not include relaxing music or different breathing options.
-          </p>
+          <p class="paragraphs paddedOnPhone">Todas estas aplicaciones no tienen la opción de chat, muchos ejercicios son de pago y la opción de respiración no incluye música relajante ni diferentes opciones de respiración.</p>
         </section>
-        <section>
-          <h1 class="subtitles">Solution</h1>
-          <p class="paragraphs paddedOnPhone">APP that helps people suffering from anxiety or panic attacks. Its main function is to <br> control the breathing rhythm (individual and group breathing exercises) and <br> to offer support through a chat (individual, group and professional chat).</p>
+        <section id="userflows" class="device-size seccion-proyecto">
+          <h1 class="subtitles">Flujos de usuarios</h1>
+          <p class="paragraphs paddedOnPhone">Los user flows ayudan a saber la ruta que sigue un usuario en un sitio web o aplicación para completar una tarea. El flujo de usuario comprende desde el punto de su entrada sumando el conjunto de pasos que ejecuta hasta que completa la tarea con un resultado exitoso.</p>
         </section>
-        <section>
-          <h1 class="subtitles">User flows</h1>
-          <img class="figure" src="img/userflow2.png">
-          <img class="figure" src="img/userflow1.png">
+        <section class="device-size">
+          <img class="figure device-size1 max-ancho" src="img/userflow2.png">
+          <img class="figure device-size1 max-ancho" src="img/userflow1.png">
         </section>
-        <section>
-          <h1 class="subtitles">Site map</h1>
-          <p class="paragraphs paddedOnPhone">On the basis of the person's needs and the respective solutions <br> to their problems and pain-points, I elaborated the site map.</p>
-          <img class="figure" src="img/sitemap.png">
+        <section id="sitemap" class="device-size seccion-proyecto">
+          <h1 class="subtitles">Mapa de sitio</h1>
+          <p class="paragraphs paddedOnPhone">A partir de las necesidades de los usuarios y las respectivas soluciones a sus problemas y puntos débiles, elaboré el site map.</p>
         </section>
-        <section>
+        <section class="device-size">
+          <img class="figure max-ancho" src="img/sitemap.png">
+        </section>
+        <section id="solutions" class="device-size seccion-proyecto">
+          <h1 class="subtitles">Soluciones</h1>
+          <p class="paragraphs paddedOnPhone">La APP respira ayuda a personas que sufren ansiedad o ataques de pánico. Tenemos 6 objetivos principales que he añadido a la aplicación, estos son:</p>
+          <p class="paragraphs paddedOnPhone">1) Controlar el ritmo respiratorio realizando la respiración abdominal.</p>
+          <p class="paragraphs paddedOnPhone">2) Tiene en cuenta tu estado de ánimo para indicarte el tiempo de respiración adecuado.</p>
+          <p class="paragraphs paddedOnPhone">3) Puedes realizar la respiración de forma individual.</p>
+          <p class="paragraphs paddedOnPhone">4) Puedes realizar la respiración de forma grupal (con amigos o desconocidos).</p>
+          <p class="paragraphs paddedOnPhone">5) Te ofrece el servicio de chat grupal, grupal con un profesional o chat con un profesional.</p>
+          <p class="paragraphs paddedOnPhone">6) Ofrece estadísticas.</p>
+        </section>
+        <section id="userpersona" class="device-size seccion-proyecto">
+          <h1 class="subtitles">User persona</h1>
+          <p class="paragraphs"> Aqui tenemos a nuestro user persona. Se llama Maria, tiene 28 años y vive en
+            Barcelona.</p>
+        </section>
+        <section class="device-size">
+          <img class="figure max-ancho" src="./img/userpersonaMaria.png">
+        </section>
+        <section class="device-size seccion-proyecto">
+          <h1 style="font-family: Nunito; font-size: 30px; padding: 50px; text-align: center">“Mientras estoy sufriendo
+            un ataque de ansiedad quedo anulada como persona, no puedo hacer nada. Simplemente me ayuda la música y la
+            respiración”</h1>
+        </section>
+        <section id="wireframes" class="device-size seccion-proyecto">
           <h1 class="subtitles">Wireframes</h1>
-          <p class="paragraphs paddedOnPhone">To ensure that the application was intuitive to use, I tested the prototype with several users. <br> I found some options confusing, such as the buttons to choose the type of breath and the option to go to my existing conversations. <br> Finally, with several rounds of testing, the app seemed intuitive and easy to use. <br><br><br></p>
-          <div class="projectsBox">
-            <img class="figure2" src="./img/wireframes.svg">
+          <p class="paragraphs paddedOnPhone">Después de realizar toda la parte de investigación y de llevar a cabo las pruebas con usuarios para cambiar pequeñas cosas, aquí podemos ver algunos wireframes de media fidelidad.<br><br><br></p>
+        </section>
+        <section class="device-size">
+          <div style="max-width: 800px; height: 400px" class="projectsBox" id="respiraWireframes">
+            <img class="figure2" style="max-width: 700px" src="./img/wireframes.svg">
           </div>
         </section>
-        <section>
-          <h1 class="subtitles">UI design</h1>
-          <img class="figure" src="./img/Moodboard - Light 1.svg">
-          <img class="figure2 paddedOnPhone" src="./img/Redonetes.svg">
-          <img class="figure2 paddedOnPhone" src="./img/botones.svg">
-          <img class="figure2 paddedOnPhone" src="./img/iconos.svg">
-          <div class="projectTypography1">
-            <div class="inRow">
-              <p>Header 1 /</p>
-              <p style="font-weight: bold">Header 1</p>
+        <section id="moodboard" class="device-size seccion-proyecto">
+          <h1 class="subtitles">Moodboard, colores y tipografias</h1>
+          <p class="paragraphs">En el moodboard quería transmitir los siguientes adjetivos: Calma, tranquilidad, libertad y paz.
+          <p class="paragraphs">Los colores, he utilizado como principales el azul, blanco y negro y como secundarios el morado.</p>
+          <p class="paragraphs">La tipografía que he utilizado tanto para títulos como para el resto de texto ha sido la Nunito.</p>
+        </section>
+        <section class="device-size">
+          <img class="figure max-ancho" src="./img/Moodboard - Light 1.svg">
+        </section>
+        <section class="device-size" style="display: flex; flex-direction: column">
+          <div style="display:flex; flex-direction: row; flex: 1">
+            <div class="colorBoxStyle" style="background: #349eff;">
+              <div style=""> Color principal</div>
+              <div>#349eff</div>
             </div>
-            <p style="font-size: 30px">Nunito, Regular & Bold 28p</p>
+            <div class="colorBoxStyle" style="background: #000000">
+              <div style=""> Color principal</div>
+              <div>#000000</div>
+            </div>
           </div>
-          <div class="projectTypography2 paddedOnPhone">
-            <div class="inRow">
-              <p>Header 2 /</p>
-              <p style="font-weight: bold">Header 2</p>
+          <div style="display:flex; flex-direction: row; flex: 1;">
+            <div class="colorBoxStyle" style="background: #FAFAFA; color: black">
+              <div style=""> Color secundario</div>
+              <div>#FAFAFA</div>
             </div>
-            <p style="font-size: 30px">Nunito, Regular & Bold 20p</p>
+            <div class="colorBoxStyle" style="background: #A532FF">
+              <div style=""> Color secundario</div>
+              <div>#A532FF</div>
+            </div>
           </div>
-          <div class="projectTypography3">
-            <div class="inRow">
-              <p>Header 3 /</p>
-              <p style="font-weight: bold">Header 3</p>
+        </section>
+        <section class="device-size" style="display: flex; flex-direction: column; margin-top: 50px">
+          <div style="display:flex; flex-direction: row; flex: 1;">
+            <div class="colorBoxStyle" style="background: #349eff">
+              <div class="textBoxStyle" style="font-size: 150px; font-family: Nunito; font-weight: bold"> Aa</div>
             </div>
-            <p style="font-size: 30px">Nunito, Regular & Bold 17p</p>
-          </div>
-          <div class="projectTypography4">
-            <div class="inRow">
-              <p>Header 4 /</p>
-              <p style="font-weight: bold">Header 4</p>
+            <div class="colorBoxStyle" style="background: #000000">
+              <div id="graphikTypography" class="textBoxStyle" style="font-family: Nunito">ABCDEFGHIJKLMNÑOPQRSTUVWXYZ<br>abcdefghijklmnñopqrstuvwxyz<br>0123456789 (@:€&#!</div>
+              <div id="graphikTypography" class="textBoxStyle" style="font-weight: bold; margin-top: -220px; font-family: Nunito">ABCDEFGHIJKLMNÑOPQRSTUVWXYZ<br>abcdefghijklmnñopqrstuvwxyz<br>0123456789 (@:€&#!</div>
             </div>
-            <p style="font-size: 30px">Nunito, Regular & Bold 15p</p>
           </div>
         </section>
 
-        <section>
-          <h1 class="subtitles">Prototype</h1>
-          <p class="paragraphs paddedOnPhone">Some screens of the prototype are shown below. Click on the link to see the prototype.</p>
-          <img class="figure2 paddedOnPhone" src="./img/prototype.svg">
+        <section id="prototype" class="device-size seccion-proyecto">
+          <h1 class="subtitles">Prototipo</h1>
+          <p class="paragraphs paddedOnPhone">A continuación podemos ver algunas pantallas del prototipo final y más abajo si le das click al dispositivo mobil podrás interactuar con el prototipo final.</p>
+          <img class="figure2 paddedOnPhone max-ancho" src="./img/mockuprespira.svg">
         </section>
-        <section>
-          <div class="projectsBox">
-            <a href="https://www.figma.com/proto/X5SZIVsr6Bfo3NRVTD9OPp/Proyecto-6-Wellness?node-id=452%3A72&viewport=832%2C309%2C0.089595727622509&scaling=scale-down">
-              <img src="./img/prototipoImg.png" style="width:420px;height:800px">
+        <section class="device-size">
+          <div class="projectsBox" style="max-width: 800px; height: 800px">
+            <a
+              href="https://www.figma.com/proto/X5SZIVsr6Bfo3NRVTD9OPp/Proyecto-6-Wellness?node-id=452%3A72&viewport=832%2C309%2C0.089595727622509&scaling=scale-down">
+              <img class="max-ancho" src="./img/respiraPrototype.png" style="width:420px;height:800px">
             </a>
           </div>
         </section>
-      <div class="bounce" id="arrowAnimationButtonRespira">
-        <a class="gotopbtn" href="#"><i class="far fa-arrow-alt-circle-up"></i></a>
-      </div>
+      </section>
     </div>
+    <div class="bounce" id="arrowAnimationButtonRespira">
+      <a class="gotopbtn" href="#"><i class="far fa-arrow-alt-circle-up"></i></a>
+    </div>
+  </div>
+  </div>
 </body>
 </html>
