@@ -21,18 +21,33 @@
               <a href="index.html">ARJ</a>
             </p>
           </div>
-          <div>
+          <div class="hide-mobile">
             <ul>
               <li><a class="scrollLink" id="work-link" href="#work">Trabajo</a></li>
               <li><a href="about.html">Sobre mí</a></li>
             </ul>
+          </div>
+          <div class="mobile-only">
+            <button id="hamburger-menu" class="hamburger hamburger--collapse" type="button" onclick="displayMenu()">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
+            <div id="hamburger-menu-content">
+              <ul>
+                <li><a class="hiddenGems" href="/workHiddenGems.html">Hidden Gems</a></li>
+                <li><a class="respira" href="/workRespira.html">Respira</a></li>
+                <li><a class="womenInTech" href="/workWomenintech.html">Women In Tech</a></li>
+                <li><a href="about.html"><img id="andrea-acerca-de" src="andrea-acerca-de.png" />Sobre mí</a></li>
+              </ul>
+            </div>
           </div>
         </nav>
       </div>
       <div>
         <section class="container">
           <h1 class="name">Andrea Ramos.</h1>
-          <h2 class="mystudies">Diseñadora UX/UI y ingeniera de software<br> de Castellón viviendo en Tarragona.</h2>
+          <h2 class="mystudies">Diseñadora UX/UI e ingeniera de software<br> de Castellón viviendo en Tarragona.</h2>
           <div class="arrow">
             <span></span>
             <span></span>
@@ -54,7 +69,7 @@
         </div>
         <div class="projectDescriptionBox">
           <h3 class="projectName">Hidden gems</h3>
-          <h4 class="projectDescriptionPrincipalScreen">Aplicación móvil que te ayuda a planificar<br>
+          <h4 class="projectDescriptionPrincipalScreen">Aplicación móvil que te ayuda a planificar
             tu viaje y también te permite encontrar lugares nuevos.</h4>
           <a class="button" href="/workHiddenGems.html">
             Ver más
@@ -65,7 +80,7 @@
       <div class="projectBox" id="respira">
         <div class="projectDescriptionBox">
           <h3 class="projectName">Respira</h3>
-          <h4 class="projectDescriptionPrincipalScreen">Aplicación móvil para ayudar a aquellas personas<br>
+          <h4 class="projectDescriptionPrincipalScreen">Aplicación móvil para ayudar a aquellas personas
             que sufren ataques de ansiedad o ataques de pánico.</h4>
           <a class="button" href="/workRespira.html">
             Ver más
@@ -81,7 +96,7 @@
         </div>
         <div class="projectDescriptionBox">
           <h3 class="projectName">Women in tech</h3>
-          <h4 class="projectDescriptionPrincipalScreen">Sitio web para informar sobre la situación<br>de la mujer en la tecnología.</h4>
+          <h4 class="projectDescriptionPrincipalScreen">Sitio web para informar sobre la situación de la mujer en la tecnología.</h4>
           <a class="button" href="/workWomenintech.html">
             Ver más
           </a>

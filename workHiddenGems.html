@@ -21,7 +21,7 @@
             </div>
             <div>
               <ul>
-                <li><a class="selected selected-hiddenGems" href="index.html#work">Trabajo · Hidden Gems</a></li>
+                <li><a class="selected selected-hiddenGems hide-mobile" href="index.html#work">Trabajo · Hidden Gems</a></li>
                 <li><a href="about.html">Sobre mí</a></li>
               </ul>
             </div>
@@ -29,14 +29,20 @@
         </div>
         <section class="containerWork" id="hiddenGems">
           <h1 style="color: #E8613C" class="projectTitle">Hidden gems</h1>
-          <h2 class="projectDescription paddedOnPhone">Aplicación móvil que te ayuda a planificar<br>tu viaje y también te permite encontrar lugares nuevos.</h2>
+          <h2 class="projectDescription paddedOnPhone">Aplicación móvil que te ayuda a planificar tu viaje y también te permite encontrar lugares nuevos.</h2>
           <a style="color: #E8613C" class="buttonSeePrototype" href="https://www.figma.com/proto/u4m24g4ph807evlsXgWsAl/Proyecto-final?node-id=596%3A5269&viewport=5373%2C-1693%2C0.20603002607822418&scaling=scale-down">
             Ver prototipo
           </a>
         </section>
         <div>
-          <div style="flex-direction: row; display: flex">
+          <div id="content-container">
             <div id="navigation">
+              <div class="mobile-only" onClick="$('#navigation').toggleClass('visible')">
+                <i class="fas fa-ellipsis-v"></i>
+              </div>
+              <div class="mobile-only" onClick="$('#navigation').toggleClass('visible')">
+                <i class="fas fa-times"></i>
+              </div>
               <ul>
                 <li href="#explanation" class="linksnavigation"><a href="#explanation">Explicación</a></li>
                 <li href="#research" class="linksnavigation"><a href="#research">Investigación</a></li>
@@ -53,7 +59,7 @@
                 <li href="#prototype" class="linksnavigation"><a href="#prototype">Prototipo</a></li>
               </ul>
             </div>
-            <section style="flex: 1">
+            <section id="body" style="flex: 1">
               <section id="explanation" class="device-size  seccion-proyecto">
                 <h1 class="subtitlesHiddenGems">Explicación</h1>
                 <p class="paragraphs">Hidden gems es una aplicación para aquellas personas que les encanta viajar y descubrir lugares nuevos.<br><br>
@@ -152,8 +158,8 @@
                 <p class="paragraphs paddedOnPhone">Después de realizar toda la parte de investigación y de llevar a cabo las pruebas con usuarios para cambiar pequeñas cosas, aquí podemos ver algunos wireframes de media fidelidad.</p>
               </section>
               <section class="device-size">
-                <div style="max-width: 800px; height: 400px" class="projectsBoxHiddenGems" id="hiddenGemsWireframes">
-                  <img class="figure2" style="max-width: 700px" src="./img/wireframesHiddengems.svg">
+                <div class="projectsBoxHiddenGems" id="hiddenGemsWireframes">
+                  <img class="figure2"  src="./img/wireframesHiddengems.svg">
                 </div>
               </section>
               <section id="moodboard" class="device-size seccion-proyecto">
@@ -166,43 +172,43 @@
                 <img class="figure max-ancho" src="./img/moodboardHiddengems.png">
               </section>
               <section class="device-size" style="display: flex; flex-direction: column">
-                <div style="display:flex; flex-direction: row; flex: 1">
-                  <div class="colorBoxStyle" style="background: #E8613C;">
-                    <div style=""> Color principal</div>
+                <div class="colorBoxContainer">
+                  <div class="colorBoxStyle colorBox3" style="background: #E8613C;">
+                    <div> Color principal</div>
                     <div>#E8613C</div>
                   </div>
-                  <div class="colorBoxStyle" style="background: #FFFFFF; color: black">
-                    <div style=""> Color principal</div>
+                  <div class="colorBoxStyle colorBox3" style="background: #FFFFFF; color: black">
+                    <div> Color principal</div>
                     <div>#FFFFFF</div>
                   </div>
-                  <div class="colorBoxStyle" style="background: #1D1D1D">
-                    <div style=""> Color principal</div>
+                  <div class="colorBoxStyle colorBox3" style="background: #1D1D1D">
+                    <div> Color principal</div>
                     <div>#1D1D1D</div>
                   </div>
                 </div>
-                <div style="display:flex; flex-direction: row; flex: 1;">
-                  <div class="colorBoxStyle" style="background: #FBBC05">
-                    <div style=""> Color secundario</div>
+                <div class="colorBoxContainer">
+                  <div class="colorBoxStyle colorBoxHalf" style="background: #FBBC05">
+                    <div> Color secundario</div>
                     <div>#FBBC05</div>
                   </div>
-                  <div class="colorBoxStyle" style="background: #0025F4">
-                    <div style=""> Color secundario</div>
+                  <div class="colorBoxStyle colorBoxHalf" style="background: #0025F4">
+                    <div> Color secundario</div>
                     <div>#0025F4</div>
                   </div>
                 </div>
               </section>
               <section class="device-size" style="display: flex; flex-direction: column; margin-top: 50px">
-                <div style="display:flex; flex-direction: row; flex: 1">
-                  <div class="colorBoxStyle" style="background: #E8613C;">
+                <div class="textBoxStylesContainer">
+                  <div class="colorBoxStyle textBoxContainer" style="background: #E8613C;">
                     <div class="textBoxStyle" style="font-size: 150px">Aa</div>
                   </div>
-                  <div class="colorBoxStyle" style="background: #1D1D1D">
+                  <div class="colorBoxStyle textBoxContainer" style="background: #1D1D1D">
                     <div class="textBoxStyle">ABCDEFGHIJKLMNÑOPQRSTUVWXYZ<br>abcdefghijklmnñopqrstuvwxyz<br>0123456789 (@:€&#!</div>
                   </div>
                 </div>
-                <div style="display:flex; flex-direction: row; flex: 1;">
+                <div class="textBoxStylesContainer">
                   <div class="colorBoxStyle" style="background: #E8613C">
-                    <div class="textBoxStyle" style="font-size: 150px; font-family: Graphik; font-weight: bold"> Aa</div>
+                    <div class="textBoxStyle" style="font-size: 150px; font-family: Graphik; font-weight: bold">Aa</div>
                   </div>
                   <div class="colorBoxStyle" style="background: #1D1D1D">
                     <div id="graphikTypography" class="textBoxStyle">ABCDEFGHIJKLMNÑOPQRSTUVWXYZ<br>abcdefghijklmnñopqrstuvwxyz<br>0123456789 (@:€&#!</div>
@@ -213,13 +219,13 @@
               <section id="prototype" class="device-size seccion-proyecto">
                 <h1 class="subtitlesHiddenGems">Prototipo</h1>
                 <p class="paragraphs paddedOnPhone">A continuación podemos ver algunas pantallas del prototipo final y más abajo si le das click al dispositivo mobil podrás interactuar con el prototipo final.</p>
-                <img class="figure2 paddedOnPhone max-ancho" src="./img/hiddengemsMockups.svg">
+                <img class="figure2 paddedOnPhone max-ancho" src="./img/hidden%20gems%20mockup.png">
               </section>
               <section class="device-size">
-                <div class="projectsBoxHiddenGems" style="max-width: 800px; height: 800px">
+                <div class="projectsBoxHiddenGems" id="hiddenGemsPrototype">
                   <a
                     href="https://www.figma.com/proto/u4m24g4ph807evlsXgWsAl/Proyecto-final?node-id=596%3A5269&viewport=5373%2C-1693%2C0.20603002607822418&scaling=scale-down">
-                    <img class="max-ancho" src="./img/prototypeHiddengems.png" style="width:420px;height:800px">
+                    <img class="max-ancho" src="./img/prototypeHiddengems.png">
                   </a>
                 </div>
               </section>
