@@ -836,6 +836,25 @@ ol, ul {
   width:420px;
   height:800px;
 }
+#respiraImgPrototype {
+  width:420px;
+  height:800px;
+}
+#respiraImgPrototypeContainer {
+  max-width: 800px; height: 800px
+}
+#respiraWireframes {
+  max-width: 800px; height: 400px;
+}
+#respiraWireframeImg {
+  max-width: 700px;
+}
+#womenInTechProtoImg {
+  width: 800px;
+}
+#womenInTechProtoLaptopImg {
+  width:150px; height:300px; position: absolute; bottom: 38px; right: 15px;
+}
 
 @media only screen and (max-width: 768px) {
   #hiddenGemsPrototype {
@@ -908,6 +927,11 @@ ol, ul {
   .button {
     font-size: 16px;
   }
+  .aboutme {
+    font-size: 16px;
+    margin: 24px;
+    padding: 0;
+  }
   #work #respira {
     flex-direction: column-reverse;
   }
@@ -941,12 +965,12 @@ ol, ul {
     position: fixed;
     width: 60px;
     height: 100px;
-    bottom: 0;
-    right: 0;
-    top: calc(100vh - 50px);
+    right: 5px;
+    top: calc(100vh - 60px);
     padding: 2px 8px;
     overflow: hidden;
     box-sizing: border-box;
+    z-index: 999999;
   }
   #navigation > div {
     display: flex;
@@ -958,7 +982,9 @@ ol, ul {
     background-color: #FAFAFA;
     border-radius: 25px;
     color: #E8613C;
-    transition: all 100ms
+    transition: all 100ms;
+    padding: 0px;
+    font-size: 20px;
   }
   #navigation > div:last-of-type {
     position: absolute;
@@ -1005,16 +1031,28 @@ ol, ul {
     width: 100%;
     height: auto;
   }
+
+  .subtitlesWomenInTech {
+    font-size: 24px;
+  }
   #content-container {
     display: block;
   }
-  #hiddenGemsWireframes, #hiddenGemsWireframes .figure2 {
+  #hiddenGemsWireframes, #hiddenGemsWireframes .figure2, #womenInTechProtoImg, #womenInTechProtoLaptopImg {
     max-width: 100%;
     height: auto;
   }
   #hiddenGemsWireframes {
-    padding: 25px;
-    margin: auto -25px;
+    padding: 24px;
+    margin: auto -24px;
+  }
+  #womenInTechProtoLaptopImg {
+    position: relative;
+    bottom: auto;
+    right: auto;
+  }
+  #womenInTechProtoImgContainer {
+    text-align: center;
   }
   #hiddenGemsWireframes .figure2 {
     margin: 0;
@@ -1039,7 +1077,24 @@ ol, ul {
   .textBoxStyle {
     padding: 20px;
   }
+  #respiraImgPrototype, #respiraWireframeImg {
+    width: 100%;
+    height: auto;
+  }
+  #respiraImgPrototypeContainer, #respiraWireframes {
+    max-width: 100%;
+  }
+  #respiraWireframes {
+    padding: 24px;
+    margin: 0 -25px;
+    width: 100vw;
+    height: auto;
+  }
+  #respiraWireframeImg {
+    margin: 0;
+  }
 }
+
 
 .mobile-only {
   display: none;

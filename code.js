@@ -44,9 +44,13 @@ $(document).ready(function () {
   $("#hamburger-menu").on('click', function () {
     $(this).toggleClass('is-active')
   })
+  $(".linksnavigation").on("click", function () {
+    $("#navigation").removeClass("visible");
+  })
+  $("#navigation #navigationToggle").on("click", function () {
+    $("#navigation").toggleClass("visible");
+  })
 })
 
-$("#navigation #navigationToggle").on("click", function () {
-  $("#navigation").toggleClass("visible");
-})
+
 

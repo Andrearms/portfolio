@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Andrea Ramos Juan · About</title>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="code.js"></script>
 </head>
 <body>
     <div class="allpage">
@@ -19,22 +22,37 @@
           </div>
           <div>
             <ul>
-              <li><a href="index.html#work">Trabajo</a></li>
-              <li><a class="selected" href="about.html">Sobre mí</a></li>
+              <li><a class="hide-mobile" href="index.html#work">Trabajo</a></li>
+              <li><a class="selected hide-mobile" href="about.html">Sobre mí</a></li>
             </ul>
+          </div>
+          <div class="mobile-only">
+            <button id="hamburger-menu" class="hamburger hamburger--collapse" type="button" onclick="displayMenu()">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
+            <div id="hamburger-menu-content">
+              <ul>
+                <li><a class="hiddenGems" href="/workHiddenGems.html">Hidden Gems</a></li>
+                <li><a class="respira" href="/workRespira.html">Respira</a></li>
+                <li><a class="womenInTech" href="/workWomenintech.html">Women In Tech</a></li>
+              </ul>
+            </div>
           </div>
         </nav>
       </div>
 
       <section class="myprofileBox device-size">
         <div class="personalInfo">
-          <div class="personalInfoBox">
-            <p class="aboutParagraphs">¡Hola! Soy Andrea, Diseñadora de UX UI y ingeniera de software.</p>
-            <p class="aboutParagraphs">Actualmente estoy trabajando como Ingeniera junior de software, pero me encantaría encontrar un trabajo como diseñadora de UX/UI, ya que he finalizado el bootcamp recientemente en Ironhack, donde he realizado 9 proyectos que me han dado todas las herramientas necesarias para poder dedicarme a ello.</p>
-            <p class="aboutParagraphs">Me gusta investigar y diseñar para las personas, empatizar con ellas y ofrecer soluciones para satisfacer sus necesidades.</p>
-            <p class="aboutParagraphs">La gente que me conoce, me definen como una persona trabajadora, responsable, dispuesta a aprender y qué sabe escuchar.</p>
-            <p class="aboutParagraphs">Me gustaría proporcionar todo mi conocimiento a un equipo que confíe en mí y cuyos valores sean, entre otros, la confianza, la honestidad, el respeto, la responsabilidad y la libertad.</p>
-            <p class="aboutParagraphs">¿Trabajamos juntos?</p>
+          <div class="personalInfoBox aboutme">
+            <p class="aboutParagraphs">Hola, mi nombre es Andrea. <br><br>
+
+              Desde pequeña he sido muy tímida e introvertida y por esta razón aprendí bastante a escuchar y siempre me ha gustado saber de la gente y escuchar sus historias. <br><br> Luego, cuando tuve que ir a la universidad me decante por la ciencia, me gustaban mucho las matemáticas y la física y por esta razón, hice ingeniería telemática. <br> Cuando terminé los estudios empecé a trabajar en una empresa como ingeniera de QA y durante este tiempo me he dado cuenta de que tenía la parte de la lógica, pero me faltaba esa parte de interactuar y de escuchar los problemas que tienen las personas. <br><br>
+
+              A raíz de eso me puse a investigar cómo podía ampliar mi carrera profesional y me interesó bastante todo lo que había leído acerca de ux/ ui y también en parte por mi compañero de trabajo que se dedica a ello y empecé a preguntarle sobre algunas cosas.<br> <br>
+
+              Más tarde, gracias a que soy o por lo menos eso me suelen decir, una persona muy trabajadora y constante finalice el bootcamp en Ironhack, comencé a colaborar con mi compañero de trabajo en la empresa y ahora mismo, me gustaría contribuir en una empresa donde pueda colaborar con lo aprendido no solo con UX/UI, sino que también valorar mis conocimientos de ingeniería.</p>
             <div class="links">
               <a href="https://www.linkedin.com/in/andrearmsjn/">
                 <i class="fa fa-linkedin-square" style="font-size:36px"></i>

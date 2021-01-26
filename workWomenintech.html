@@ -21,9 +21,23 @@
         </div>
         <div>
           <ul>
-            <li><a class="selected selected-womenInTech" href="index.html#work">Trabajo · Women in tech</a></li>
-            <li><a href="about.html">Sobre mí</a></li>
+            <li><a class="selected selected-womenInTech hide-mobile" href="index.html#work">Trabajo · Women in tech</a></li>
+            <li><a class="hide-mobile" href="about.html">Sobre mí</a></li>
           </ul>
+        </div>
+        <div class="mobile-only">
+          <button id="hamburger-menu" class="hamburger hamburger--collapse" type="button" onclick="displayMenu()">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+          </button>
+          <div id="hamburger-menu-content">
+            <ul>
+              <li><a class="hiddenGems" href="/workHiddenGems.html">Hidden Gems</a></li>
+              <li><a class="respira" href="/workRespira.html">Respira</a></li>
+              <li><a href="about.html"><img id="andrea-acerca-de" src="andrea-acerca-de.png" />Sobre mí</a></li>
+            </ul>
+          </div>
         </div>
       </nav>
     </div>
@@ -35,8 +49,14 @@
       </a>
     </section>
     <div>
-      <div style="flex-direction: row; display: flex">
+      <div class="content-container">
         <div id="navigation" class="womenInTech">
+          <div class="mobile-only" onClick="$('#navigation').toggleClass('visible')">
+            <i class="fas fa-ellipsis-v" style="color: #f1a03d"></i>
+          </div>
+          <div class="mobile-only" onClick="$('#navigation').toggleClass('visible')">
+            <i class="fas fa-times" style="color: #f1a03d"></i>
+          </div>
           <ul>
             <li href="#explanation" class="linksnavigation"><a href="#explanation">Explicación</a></li>
             <li href="#research" class="linksnavigation"><a href="#research">Investigación</a></li>
@@ -44,7 +64,7 @@
             <li href="#prototype" class="linksnavigation"><a href="#prototype">Prototipo</a></li>
           </ul>
         </div>
-        <section style="flex: 1">
+        <section id="body" style="flex: 1">
           <section id="explanation" class="device-size seccion-proyecto">
             <h1 class="subtitlesWomenInTech">Explicación</h1>
             <p class="paragraphs">La mayoría de puestos de alta dirección en empresas de la esfera de la innovación como Google, Facebook, Microsoft, HP o LinkedIn lo desempeñan mujeres, un escenario que muestra la revolución femenina en su pleno apogeo y que demuestra que se han dado pasos importantes para lograr una diversidad de género, aunque todavía queda mucho camino por recorrer.</p>
@@ -92,41 +112,41 @@
           </section>
 
           <section class="device-size" style="display: flex; flex-direction: column">
-            <div style="display:flex; flex-direction: row; flex: 1">
-              <div class="colorBoxStyle" style="background: #F1A03D;">
-                <div style=""> Color principal</div>
-                <div>#F1A03D</div>
+            <div class="colorBoxContainer">
+              <div class="colorBoxStyle colorBoxHalf" style="background: #f1a03d;">
+                <div> Color principal</div>
+                <div>#f1a03d</div>
               </div>
-              <div class="colorBoxStyle" style="background: #1ED8DB">
-                <div style=""> Color principal</div>
-                <div>#1ED8DB</div>
+              <div class="colorBoxStyle colorBoxHalf" style="background: #1ed8db;">
+                <div> Color principal</div>
+                <div>#1ed8db</div>
               </div>
             </div>
-            <div style="display:flex; flex-direction: row; flex: 1;">
-              <div class="colorBoxStyle" style="background: #181818">
-                <div style=""> Color principal</div>
-                <div>#181818</div>
-              </div>
-              <div class="colorBoxStyle" style="background: #FAFAFA; color: black">
-                <div style=""> Color principal</div>
+            <div class="colorBoxContainer">
+              <div class="colorBoxStyle colorBoxHalf" style="background: #FAFAFA; color: black">
+                <div> Color secundario</div>
                 <div>#FAFAFA</div>
+              </div>
+              <div class="colorBoxStyle colorBoxHalf" style="background: #1D1D1D">
+                <div> Color secundario</div>
+                <div>#1D1D1D</div>
               </div>
             </div>
           </section>
           <section class="device-size" style="display: flex; flex-direction: column; margin-top: 50px">
-            <div style="display:flex; flex-direction: row; flex: 1">
-              <div class="colorBoxStyle" style="background: #F1A03D;">
+            <div class="textBoxStylesContainer">
+              <div class="colorBoxStyle textBoxContainer" style="background: #F1A03D;">
                 <div class="textBoxStyle" style="font-size: 150px; font-family: 'Morganite'; font-weight: bold">Aa</div>
               </div>
-              <div class="colorBoxStyle" style="background: #1D1D1D">
+              <div class="colorBoxStyle textBoxContainer" style="background: #1D1D1D">
                 <div class="textBoxStyle" style="font-family: 'Morganite'; font-size: 40px">ABCDEFGHIJKLMNÑOPQRSTUVWXYZ<br>abcdefghijklmnñopqrstuvwxyz<br>0123456789 (@:€&#!</div>
               </div>
             </div>
-            <div style="display:flex; flex-direction: row; flex: 1;">
-              <div class="colorBoxStyle" style="background: #f1a03d">
+            <div class="textBoxStylesContainer">
+              <div class="colorBoxStyle textBoxContainer" style="background: #f1a03d">
                 <div class="textBoxStyle" style="font-size: 150px; font-family: 'Neue Plak'; font-weight: bold"> Aa</div>
               </div>
-              <div class="colorBoxStyle" style="background: #1D1D1D">
+              <div class="colorBoxStyle textBoxContainer" style="background: #1D1D1D">
                 <div id="graphikTypography" class="textBoxStyle" style="font-family: 'Neue Plak'; padding-top: 30px">ABCDEFGHIJKLMNÑOPQRSTUVWXYZ<br>abcdefghijklmnñopqrstuvwxyz<br>0123456789 (@:€&#!</div>
                 <div id="graphikTypography" class="textBoxStyle" style="font-weight: bold; margin-top: -190px; font-family: 'Neue Plak'">ABCDEFGHIJKLMNÑOPQRSTUVWXYZ<br>abcdefghijklmnñopqrstuvwxyz<br>0123456789 (@:€&#!</div>
               </div>
@@ -135,10 +155,10 @@
           <section id="prototype" class="projectsBoxWomenInTech device-size seccion-proyecto">
             <h1 class="subtitlesWomenInTech">Prototipo</h1>
             <div>
-              <div style="position:relative;">
+              <div id="womenInTechProtoImgContainer" style="position:relative;">
                 <a href="https://www.figma.com/proto/PxzYrhAmYx890dyqRRwhVT/Women-in-tech?node-id=151%3A783&viewport=-2910%2C-185%2C0.1817225217819214&scaling=min-zoom">
-                  <img style="width: 800px" class="image" src="./img/MacBook%20Pro.png">
-                  <img src="./img/iPhone%2012%20Pro@2x.png" style="width:150px; height:300px; position: absolute; bottom: 38px; right: 15px;">
+                  <img id="womenInTechProtoImg" class="image" src="./img/MacBook%20Pro.png">
+                  <img src="./img/iPhone%2012%20Pro@2x.png" id="womenInTechProtoLaptopImg">
                 </a>
               </div>
               <div>
